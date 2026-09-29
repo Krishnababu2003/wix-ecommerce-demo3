@@ -20,7 +20,3 @@ The CSS includes layouts for:
 ## Run
 
 Open `index.html` directly in a browser.
-
-No framework is required.
-
-Added sections: Testimonials, Reviews carousel, and Contact form.
