@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Responsive eCommerce website builder landing page inspired by modern SaaS layouts." />
+  <title>eCommerce Website Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top eCommerce navigation -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#" aria-label="StoreBuilder home">
+        <span class="brand-mark">✦</span>
+        <span>eCommerce</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <div class="nav-group">
+          <button class="nav-link dropdown-trigger">Start <span>⌄</span></button>
+          <div class="dropdown">
+            <a href="#builder">eCommerce Website</a>
+            <a href="#templates">Online Store</a>
+            <a href="#templates">eCommerce Templates</a>
+            <a href="#templates">Migrate</a>
+          </div>
+        </div>
+
+        <div class="nav-group">
+          <button class="nav-link dropdown-trigger">Sell <span>⌄</span></button>
+          <div class="dropdown">
+            <a href="#features">Sell on your site</a>
+            <a href="#features">Dropshipping</a>
+            <a href="#features">Custom merchandise</a>
+            <a href="#features">Sales channels</a>
+          </div>
+        </div>
+
+        <div class="nav-group">
+          <button class="nav-link dropdown-trigger">Manage <span>⌄</span></button>
+          <div class="dropdown">
+            <a href="#features">Payments</a>
+            <a href="#features">POS</a>
+            <a href="#features">Analytics</a>
+            <a href="#features">Marketing</a>
+          </div>
+        </div>
+
+        <div class="nav-group">
+          <button class="nav-link dropdown-trigger">Learn <span>⌄</span></button>
+          <div class="dropdown">
+            <a href="#templates">Guides</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <button class="search-btn" id="searchBtn" aria-label="Search">⌕</button>
+        <button class="login-btn">Log In</button>
+        <a href="#builder" class="top-cta">Create Your Store</a>
+      </div>
+    </div>
+
+    <div class="mobile-search" id="mobileSearch">
+      <input type="search" id="siteSearch" placeholder="Search..." />
+      <button id="closeSearch">✕</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="builder">
+      <div class="hero-glow glow-1"></div>
+      <div class="hero-glow glow-2"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">ECOMMERCE WEBSITE BUILDER</div>
+
+          <h1>Start selling.<br><em>Grow without limits.</em></h1>
+
+          <p class="hero-text">
+            Build, run and scale your online store with a powerful eCommerce platform
+            designed for modern businesses.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#features" class="primary-btn">Create Your Store <span>→</span></a>
+            <span class="micro-copy">Start for free. Upgrade anytime.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Storefront Design -->
+    <section class="design-section" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">STORE DESIGN</span>
+            <h2>Unmatched storefront design</h2>
+          </div>
+          <p>
+            Create high-converting storefronts and product pages with flexible layouts,
+            brand-friendly controls and built-in tools.
+          </p>
+        </div>
+
+        <div class="design-grid">
+          <div class="design-copy">
+            <div class="feature-list">
+              <button class="feature-item active" data-feature="brand">
+                <span class="num">01</span>
+                <span><b>Built around your brand</b><small>Customize typography, spacing, colors and sections.</small></span>
+                <span class="arrow">↗</span>
+              </button>
+
+              <button class="feature-item" data-feature="mobile">
+                <span class="num">02</span>
+                <span><b>Responsive by default</b><small>Give shoppers a polished experience on every screen.</small></span>
+                <span class="arrow">↗</span>
+              </button>
+
+              <button class="feature-item" data-feature="conversion">
+                <span class="num">03</span>
+                <span><b>Designed to convert</b><small>Highlight products, offers and calls to action clearly.</small></span>
+                <span class="arrow">↗</span>
+              </button>
+
+              <button class="feature-item" data-feature="ai">
+                <span class="num">04</span>
+                <span><b>AI-assisted content</b><small>Speed up product imagery and store content creation.</small></span>
+                <span class="arrow">↗</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="design-preview">
+            <div class="preview-window">
+              <div class="preview-sidebar">
+                <span class="side-dot active"></span>
+                <span class="side-dot"></span>
+                <span class="side-dot"></span>
+                <span class="side-dot"></span>
+              </div>
+
+              <div class="preview-content">
+                <div class="preview-top">
+                  <strong id="previewTitle">YOUR BRAND</strong>
+                  <span>Home&nbsp;&nbsp; Shop&nbsp;&nbsp; About&nbsp;&nbsp; Cart</span>
+                </div>
+
+                <div class="preview-banner" id="previewBanner">
+                  <small>NEW SEASON</small>
+                  <h3>Everything you need<br>to look your best.</h3>
+                  <button>Explore products</button>
+                </div>
+
+                <div class="preview-grid">
+                  <div class="p-card"><span></span><b>Essential 01</b><small>$59</small></div>
+                  <div class="p-card"><span></span><b>Essential 02</b><small>$74</small></div>
+                  <div class="p-card"><span></span><b>Essential 03</b><small>$92</small></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Template Section -->
+    <section class="template-section" id="templates">
+      <div class="container">
+        <div class="template-heading">
+          <div>
+            <span class="eyebrow">START FASTER</span>
+            <h2>eCommerce templates<br>built for success</h2>
+          </div>
+
+          <div class="template-controls">
+            <button class="cat-btn active" data-category="fashion">Fashion</button>
+            <button class="cat-btn" data-category="tech">Electronics</button>
+            <button class="cat-btn" data-category="home">Home & Decor</button>
+            <button class="cat-btn" data-category="beauty">Beauty</button>
+          </div>
+        </div>
+
+        <div class="template-track" id="templateTrack">
+          <article class="template-card" data-category="fashion">
+            <div class="template-image fashion"></div>
+            <div class="template-info"><b>Editorial Shop</b><span>Fashion</span></div>
+          </article>
+          <article class="template-card" data-category="tech">
+            <div class="template-image tech"></div>
+            <div class="template-info"><b>Tech Store</b><span>Electronics</span></div>
+          </article>
+          <article class="template-card" data-category="home">
+            <div class="template-image home"></div>
+            <div class="template-info"><b>Soft Living</b><span>Home & Decor</span></div>
+          </article>
+          <article class="template-card" data-category="beauty">
+            <div class="template-image beauty"></div>
+            <div class="template-info"><b>Pure Beauty</b><span>Beauty</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-heading testimonials-heading">
+          <div>
+            <span class="eyebrow">TESTIMONIALS</span>
+            <h2>Built for brands that want to grow.</h2>
+          </div>
+          <p>
+            See how founders and store teams use a flexible eCommerce experience
+            to present their products and connect with customers.
+          </p>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <div class="quote-mark">“</div>
+            <p>
+              “The clean storefront, easy editing and responsive design made it
+              much simpler to launch our online shop.”
+            </p>
+            <div class="person">
+              <div class="avatar avatar-one">SK</div>
+              <div><strong>Krishna Babu</strong><small>Founder</small></div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="quote-mark">“</div>
+            <p>
+              “We can update products quickly and keep the brand experience
+              consistent across desktop and mobile.”
+            </p>
+            <div class="person">
+              <div class="avatar avatar-two">RM</div>
+              <div><strong>Sudheer Kumar</strong><small>Co-founder</small></div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="quote-mark">“</div>
+            <p>
+              “The design feels premium without making the store difficult to
+              manage day to day.”
+            </p>
+            <div class="person">
+              <div class="avatar avatar-three">AN</div>
+              <div><strong>Pavithra</strong><small>Creative Director</small></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        <div class="reviews-head">
+          <div>
+            <span class="eyebrow">REVIEWS</span>
+            <h2>What shoppers and founders are saying.</h2>
+          </div>
+          <div class="review-score">
+            <strong>4.8</strong>
+            <span class="review-stars">★★★★★</span>
+            <small>Based on customer feedback</small>
+          </div>
+        </div>
+
+        <div class="review-carousel" aria-label="Customer reviews">
+          <button class="review-arrow prev" id="reviewPrev" aria-label="Previous review">←</button>
+
+          <div class="review-slider" id="reviewSlider">
+            <article class="review-slide active">
+              <span class="review-label">STORE OWNER</span>
+              <p>“A polished shopping experience from the first click to checkout.”</p>
+              <strong>Karishma S.</strong>
+            </article>
+
+            <article class="review-slide">
+              <span class="review-label">CREATOR</span>
+              <p>“I wanted something minimal but flexible, and the layout works beautifully.”</p>
+              <strong>Yaswanth K.</strong>
+            </article>
+
+            <article class="review-slide">
+              <span class="review-label">SMALL BUSINESS</span>
+              <p>“The responsive layout gives our customers a consistent experience everywhere.”</p>
+              <strong>Ashik T.</strong>
+            </article>
+          </div>
+
+          <button class="review-arrow next" id="reviewNext" aria-label="Next review">→</button>
+        </div>
+
+        <div class="review-dots" id="reviewDots" aria-label="Review navigation">
+          <button class="review-dot active" data-index="0" aria-label="Review 1"></button>
+          <button class="review-dot" data-index="1" aria-label="Review 2"></button>
+          <button class="review-dot" data-index="2" aria-label="Review 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <span class="eyebrow">CONTACT</span>
+          <h2>Let's build your store.</h2>
+          <p>
+            Have a question about starting, designing or growing your eCommerce
+            website? Send a message and our team can follow up.
+          </p>
+
+          <div class="contact-details">
+            <div><span>EMAIL</span><a href="mailto:hello@krishnababu.com">hello@krishnababu.com</a></div>
+            <div><span>PHONE</span><a href="tel:+18001234567">+91 800 123 4567</a></div>
+            <div><span>HOURS</span><p>Mon–Fri · 9:00 AM–6:00 PM</p></div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <label>
+              Full name
+              <input type="text" id="contactName" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email address
+              <input type="email" id="contactEmail" name="email" placeholder="you@example.com" required />
+            </label>
+          </div>
+
+          <label>
+            What can we help with?
+            <select id="contactTopic" name="topic">
+              <option value="General enquiry">General enquiry</option>
+              <option value="Website setup">Website setup</option>
+              <option value="Design help">Design help</option>
+              <option value="Store growth">Store growth</option>
+            </select>
+          </label>
+
+          <label>
+            Message
+            <textarea id="contactMessage" name="message" rows="6" placeholder="Tell us a little about your project..." required></textarea>
+          </label>
+
+          <button type="submit" class="primary-btn contact-submit">Send Message <span>→</span></button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Final Cta-->
+    <section class="final-cta">
+      <div class="container final-cta-inner">
+        <div>
+          <span class="eyebrow">READY TO START?</span>
+          <h2>Your store. Your brand. Your next chapter.</h2>
+        </div>
+        <a href="#builder" class="primary-btn light">Create Your Store <span>→</span></a>
+      </div>
+    </section>
+
+    <!-- Ratings Strip -->
+    <section class="trust-strip">
+      <div class="container trust-wrap">
+        <div class="trust-rating">
+          <span>Our customers rate us</span>
+          <strong>★★★★★</strong>
+          <small>based on 10,760+ reviews</small>
+        </div>
+        <div class="trust-stat"><strong>1M+</strong><span>online stores powered</span></div>
+        <div class="trust-stat"><strong>24/7</strong><span>business growth mindset</span></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section-->
+  <footer>
+    <div class="container footer-wrap">
+      <span>© 2026 KrishnaBabu</span>
+      <div><a href="#builder">Privacy</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
